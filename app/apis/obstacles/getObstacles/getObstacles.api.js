@@ -30,11 +30,12 @@ module.exports = {
         ]
     },
     action: function (req, res) {
-        let obj = [{
-                "id": "xsdsdcxd",
-                "type": "hole",
-                "latitude": "-23.5086581",
-                "longitude": "-46.5986349"
+        let obj = [
+                {
+                    "id": "xsdsdcxd",
+                    "type": "hole",
+                    "latitude": "-23.4086581",
+                    "longitude": "-46.5986349"
                 },
                 {
                     "id": "xsdsddddd",
