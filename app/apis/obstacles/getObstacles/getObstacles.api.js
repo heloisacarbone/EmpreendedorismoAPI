@@ -42,6 +42,12 @@ module.exports = {
                     "type": "pole",
                     "latitude": "-23.507674262265095",
                     "longitude": "-46.59869927301634"
+                },
+                {
+                    "id": "xsdsddddd",
+                    "type": "pole",
+                    "latitude":"-23.4076581",
+                    "longitude": "-46.5986349"
                 }
                 ];
         
