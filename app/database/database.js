@@ -3,7 +3,7 @@
 const fs = require('fs'),
     path = require('path');
 
-const mongo = process.env.IS_MOCK == 'true' ? require('mongo-mock') : require('mongodb');
+const mongo = require('mongodb');
 const config = require(path.join(process.cwd(), 'app/config'));
 
 function setCollections (db) {

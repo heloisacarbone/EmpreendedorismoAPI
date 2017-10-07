@@ -15,7 +15,7 @@ module.exports = {
         parameters: [
             paramTypes.query("lng", "Longitude", "string"),
             paramTypes.query("lat", "Latitude", "string"),
-            paramTypes.query("tipo", "Tipo", "string")
+            paramTypes.query("type", "Tipo", "string")
         ],
         errorResponses: [
             {
@@ -29,29 +29,5 @@ module.exports = {
             }
         ]
     },
-    action: function (req, res) {
-        let obj = [
-                {
-                    "id": "xsdsdcxd",
-                    "type": "hole",
-                    "latitude": "-23.4086581",
-                    "longitude": "-46.5986349"
-                },
-                {
-                    "id": "xsdsddddd",
-                    "type": "pole",
-                    "latitude": "-23.507674262265095",
-                    "longitude": "-46.59869927301634"
-                },
-                {
-                    "id": "xsdsddddd",
-                    "type": "pole",
-                    "latitude":"-23.4076581",
-                    "longitude": "-46.5986349"
-                }
-                ];
-        
-        res.status(200).send(obj);
-                
-    }
+    action: require('./getObstacles.action')
 };

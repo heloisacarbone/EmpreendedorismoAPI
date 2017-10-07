@@ -9,11 +9,11 @@ exports.models = {
                 'description': 'Tipo do Obstaculo'
             },
             'latitude': {
-                'type': 'string',
+                'type': 'number',
                 'description': 'Latitude'
             },
             'longitude': {
-                'type': 'string',
+                'type': 'number',
                 'description': 'Longitude'
             }
 

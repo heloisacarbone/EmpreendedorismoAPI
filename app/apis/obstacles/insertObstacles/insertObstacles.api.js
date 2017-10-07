@@ -27,13 +27,5 @@ module.exports = {
             }
         ]
     },
-    action: function (req, res) {
-        let obj = {
-            "code": 200,
-            "description": "Obstaculo inserido com sucesso"
-        };
-        
-        res.status(200).send(obj);
-                
-    }
+    action: require('./insertObstacles.action')
 };
