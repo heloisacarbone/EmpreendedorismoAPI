@@ -25,7 +25,7 @@ function connectionCallback (error, db) {
 }
 
 function _initialize () {
-    const mongo_uri = config.mongoEndpoint;
+    const mongo_uri = process.env.MONGODB_URI ? process.env.MONGODB_URI : config.mongoEndpoint;
     console.log('connecting @', mongo_uri);
 
     mongo.MongoClient.connect(mongo_uri, connectionCallback);
