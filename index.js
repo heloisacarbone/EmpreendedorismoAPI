@@ -1,7 +1,5 @@
 'use strict';
 
-process.env.IS_MOCK = process.env.ENV === undefined;
-
 const express = require('express'),
     swagger = require('node-swagger-ui'),
     database = require('./app/database'),
